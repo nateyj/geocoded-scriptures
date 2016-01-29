@@ -1,46 +1,76 @@
 //
 //  AppDelegate.swift
-//  Map Scriptures V2
+//  Map Scriptures
 //
-//  Created by Nathan Johnson on 12/9/15.
+//  Created by Nathan Johnson on 11/12/15.
 //  Copyright © 2015 Nathan Johnson. All rights reserved.
 //
 
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDelegate {
 
+    // MARK: - Properties
+    
     var window: UIWindow?
 
+    
+    // MARK: - Application lifecycle
 
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+    func application(application: UIApplication,
+        didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+
+        let splitViewController = self.window!.rootViewController as! UISplitViewController
+        let navigationController = splitViewController.viewControllers.last as! UINavigationController
+        
+        navigationController.topViewController!.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem()
+        splitViewController.delegate = self
+            
+        UIMenuController.sharedMenuController().menuItems = [UIMenuItem(title: "Suggest Geocoding", action: "suggestGeocoding:")]
+        
         return true
     }
 
-    func applicationWillResignActive(application: UIApplication) {
-        // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-        // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+    
+    // MARK: - Split view
+
+    func splitViewController(splitViewController: UISplitViewController,
+        collapseSecondaryViewController secondaryViewController:UIViewController,
+        ontoPrimaryViewController primaryViewController:UIViewController) -> Bool {
+        
+        guard let secondaryAsNavController = secondaryViewController as? UINavigationController else { return false }
+        guard let _ = secondaryAsNavController.topViewController as? MapViewController else { return false }
+        
+        return true
     }
-
-    func applicationDidEnterBackground(application: UIApplication) {
-        // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-        // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    
+    func splitViewController(splitViewController: UISplitViewController,
+        separateSecondaryViewControllerFromPrimaryViewController primaryViewController: UIViewController) -> UIViewController? {
+        
+        if let navigationViewController = primaryViewController as? UINavigationController {
+            for controller in navigationViewController.viewControllers {
+                if let controllerViewController = controller as? UINavigationController {
+                    // we found our detail view controller on the master view controller stack
+                    return controllerViewController
+                }
+            }
+        }
+        
+        // we didn't find our detail view controller on the master view controller stack, so we need to instantiate it
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let detailView = storyboard.instantiateViewControllerWithIdentifier("detailVC") as! UINavigationController
+            
+            // ensure back button is enabled
+            if let controller = detailView.visibleViewController {
+                // allows user to hide the master view controller by pushing on a button
+                controller.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem()
+                
+                // if we wanted to have an array of things in the left bar button, it's possible now
+                controller.navigationItem.leftItemsSupplementBackButton = true
+            }
+        
+        return detailView
     }
-
-    func applicationWillEnterForeground(application: UIApplication) {
-        // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
-    }
-
-    func applicationDidBecomeActive(application: UIApplication) {
-        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-    }
-
-    func applicationWillTerminate(application: UIApplication) {
-        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-    }
-
-
 }
 

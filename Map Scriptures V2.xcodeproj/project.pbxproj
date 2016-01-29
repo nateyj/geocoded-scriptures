@@ -7,21 +7,132 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		437EFB6E1C18E89400798082 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437EFB6D1C18E89400798082 /* AppDelegate.swift */; };
-		437EFB701C18E89400798082 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437EFB6F1C18E89400798082 /* ViewController.swift */; };
-		437EFB731C18E89400798082 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 437EFB711C18E89400798082 /* Main.storyboard */; };
+		43640AF91C19F75C0006EC36 /* geocode.js in Resources */ = {isa = PBXBuildFile; fileRef = 43640AF81C19F75C0006EC36 /* geocode.js */; };
 		437EFB751C18E89400798082 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 437EFB741C18E89400798082 /* Assets.xcassets */; };
-		437EFB781C18E89400798082 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 437EFB761C18E89400798082 /* LaunchScreen.storyboard */; };
+		437EFBB01C18EB6500798082 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437EFBA11C18EB6500798082 /* AppDelegate.swift */; };
+		437EFBB11C18EB6500798082 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437EFBA21C18EB6500798082 /* Book.swift */; };
+		437EFBB21C18EB6500798082 /* BooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437EFBA31C18EB6500798082 /* BooksViewController.swift */; };
+		437EFBB31C18EB6500798082 /* ChaptersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437EFBA41C18EB6500798082 /* ChaptersViewController.swift */; };
+		437EFBB41C18EB6500798082 /* CustomWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437EFBA51C18EB6500798082 /* CustomWebView.swift */; };
+		437EFBB51C18EB6500798082 /* FormTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437EFBA61C18EB6500798082 /* FormTableViewController.swift */; };
+		437EFBB61C18EB6500798082 /* geo.21.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 437EFBA71C18EB6500798082 /* geo.21.sqlite */; };
+		437EFBB71C18EB6500798082 /* GeoDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437EFBA81C18EB6500798082 /* GeoDatabase.swift */; };
+		437EFBB81C18EB6500798082 /* GeoPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437EFBA91C18EB6500798082 /* GeoPlace.swift */; };
+		437EFBBA1C18EB6500798082 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437EFBAB1C18EB6500798082 /* MapViewController.swift */; };
+		437EFBBB1C18EB6500798082 /* scripture.css in Resources */ = {isa = PBXBuildFile; fileRef = 437EFBAC1C18EB6500798082 /* scripture.css */; };
+		437EFBBC1C18EB6500798082 /* ScriptureRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437EFBAD1C18EB6500798082 /* ScriptureRenderer.swift */; };
+		437EFBBD1C18EB6500798082 /* ScriptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437EFBAE1C18EB6500798082 /* ScriptureViewController.swift */; };
+		437EFBBE1C18EB6500798082 /* VolumesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437EFBAF1C18EB6500798082 /* VolumesViewController.swift */; };
+		437EFBDE1C18EBD300798082 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 437EFBDD1C18EBD300798082 /* MapKit.framework */; };
+		437EFBDF1C18EBD900798082 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 437EFBCC1C18EBBF00798082 /* SQLite.framework */; };
+		437EFBE11C18EBE700798082 /* SQLite.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 437EFBCC1C18EBBF00798082 /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		437EFBE41C18ED2300798082 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 437EFBE21C18ED2300798082 /* LaunchScreen.storyboard */; };
+		437EFBE51C18ED2300798082 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 437EFBE31C18ED2300798082 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		437EFBCB1C18EBBF00798082 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 437EFBBF1C18EBBF00798082 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DC2B29E21B26F718001C60EA;
+			remoteInfo = "SQLite iOS";
+		};
+		437EFBCD1C18EBBF00798082 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 437EFBBF1C18EBBF00798082 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DC2B29EC1B26F718001C60EA;
+			remoteInfo = "SQLite iOS Tests";
+		};
+		437EFBCF1C18EBBF00798082 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 437EFBBF1C18EBBF00798082 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DC7253AC1B52ADEB009B38B1;
+			remoteInfo = "SQLite Mac";
+		};
+		437EFBD11C18EBBF00798082 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 437EFBBF1C18EBBF00798082 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DC7253B51B52ADEC009B38B1;
+			remoteInfo = "SQLite Mac Tests";
+		};
+		437EFBD31C18EBBF00798082 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 437EFBBF1C18EBBF00798082 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DCE7BB7A1B7434F90040D364;
+			remoteInfo = "SQLiteCipher iOS";
+		};
+		437EFBD51C18EBBF00798082 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 437EFBBF1C18EBBF00798082 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DCE7BB831B7434F90040D364;
+			remoteInfo = "SQLiteCipher iOS Tests";
+		};
+		437EFBD71C18EBBF00798082 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 437EFBBF1C18EBBF00798082 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DCE7BBB01B7438610040D364;
+			remoteInfo = "SQLiteCipher Mac";
+		};
+		437EFBD91C18EBBF00798082 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 437EFBBF1C18EBBF00798082 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DCE7BBB91B7438620040D364;
+			remoteInfo = "SQLiteCipher Mac Tests";
+		};
+		437EFBDB1C18EBCB00798082 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 437EFBBF1C18EBBF00798082 /* SQLite.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = DC2B29E11B26F718001C60EA;
+			remoteInfo = "SQLite iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		437EFBE01C18EBDD00798082 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				437EFBE11C18EBE700798082 /* SQLite.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		43640AF81C19F75C0006EC36 /* geocode.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = geocode.js; sourceTree = "<group>"; };
 		437EFB6A1C18E89400798082 /* Map Scriptures V2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Map Scriptures V2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		437EFB6D1C18E89400798082 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		437EFB6F1C18E89400798082 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		437EFB721C18E89400798082 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		437EFB741C18E89400798082 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		437EFB771C18E89400798082 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		437EFB791C18E89400798082 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		437EFBA01C18EB6200798082 /* Map Scriptures V2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Map Scriptures V2-Bridging-Header.h"; sourceTree = "<group>"; };
+		437EFBA11C18EB6500798082 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		437EFBA21C18EB6500798082 /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		437EFBA31C18EB6500798082 /* BooksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BooksViewController.swift; sourceTree = "<group>"; };
+		437EFBA41C18EB6500798082 /* ChaptersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChaptersViewController.swift; sourceTree = "<group>"; };
+		437EFBA51C18EB6500798082 /* CustomWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomWebView.swift; sourceTree = "<group>"; };
+		437EFBA61C18EB6500798082 /* FormTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormTableViewController.swift; sourceTree = "<group>"; };
+		437EFBA71C18EB6500798082 /* geo.21.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = geo.21.sqlite; sourceTree = "<group>"; };
+		437EFBA81C18EB6500798082 /* GeoDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoDatabase.swift; sourceTree = "<group>"; };
+		437EFBA91C18EB6500798082 /* GeoPlace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoPlace.swift; sourceTree = "<group>"; };
+		437EFBAB1C18EB6500798082 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		437EFBAC1C18EB6500798082 /* scripture.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = scripture.css; sourceTree = "<group>"; };
+		437EFBAD1C18EB6500798082 /* ScriptureRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScriptureRenderer.swift; sourceTree = "<group>"; };
+		437EFBAE1C18EB6500798082 /* ScriptureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScriptureViewController.swift; sourceTree = "<group>"; };
+		437EFBAF1C18EB6500798082 /* VolumesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolumesViewController.swift; sourceTree = "<group>"; };
+		437EFBBF1C18EBBF00798082 /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = "SQLite.swift-master/SQLite.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		437EFBDD1C18EBD300798082 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		437EFBE21C18ED2300798082 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		437EFBE31C18ED2300798082 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +140,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				437EFBDF1C18EBD900798082 /* SQLite.framework in Frameworks */,
+				437EFBDE1C18EBD300798082 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +151,7 @@
 		437EFB611C18E89300798082 = {
 			isa = PBXGroup;
 			children = (
+				437EFBDD1C18EBD300798082 /* MapKit.framework */,
 				437EFB6C1C18E89400798082 /* Map Scriptures V2 */,
 				437EFB6B1C18E89400798082 /* Products */,
 			);
@@ -54,14 +168,76 @@
 		437EFB6C1C18E89400798082 /* Map Scriptures V2 */ = {
 			isa = PBXGroup;
 			children = (
-				437EFB6D1C18E89400798082 /* AppDelegate.swift */,
-				437EFB6F1C18E89400798082 /* ViewController.swift */,
-				437EFB711C18E89400798082 /* Main.storyboard */,
+				437EFBE61C18FC1300798082 /* Model */,
+				437EFBE71C18FC1C00798082 /* View */,
+				437EFBE81C18FC4200798082 /* Controller */,
+				437EFBEB1C18FCC000798082 /* Assets */,
 				437EFB741C18E89400798082 /* Assets.xcassets */,
-				437EFB761C18E89400798082 /* LaunchScreen.storyboard */,
 				437EFB791C18E89400798082 /* Info.plist */,
+				437EFBA01C18EB6200798082 /* Map Scriptures V2-Bridging-Header.h */,
+				437EFBBF1C18EBBF00798082 /* SQLite.xcodeproj */,
 			);
 			path = "Map Scriptures V2";
+			sourceTree = "<group>";
+		};
+		437EFBC01C18EBBF00798082 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				437EFBCC1C18EBBF00798082 /* SQLite.framework */,
+				437EFBCE1C18EBBF00798082 /* SQLite iOS Tests.xctest */,
+				437EFBD01C18EBBF00798082 /* SQLite.framework */,
+				437EFBD21C18EBBF00798082 /* SQLite Mac Tests.xctest */,
+				437EFBD41C18EBBF00798082 /* SQLiteCipher.framework */,
+				437EFBD61C18EBBF00798082 /* SQLiteCipher iOS Tests.xctest */,
+				437EFBD81C18EBBF00798082 /* SQLiteCipher.framework */,
+				437EFBDA1C18EBBF00798082 /* SQLiteCipher Mac Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		437EFBE61C18FC1300798082 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				437EFBA21C18EB6500798082 /* Book.swift */,
+				437EFBA81C18EB6500798082 /* GeoDatabase.swift */,
+				437EFBA91C18EB6500798082 /* GeoPlace.swift */,
+				437EFBAD1C18EB6500798082 /* ScriptureRenderer.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		437EFBE71C18FC1C00798082 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				437EFBE21C18ED2300798082 /* LaunchScreen.storyboard */,
+				437EFBE31C18ED2300798082 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		437EFBE81C18FC4200798082 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				437EFBA31C18EB6500798082 /* BooksViewController.swift */,
+				437EFBA41C18EB6500798082 /* ChaptersViewController.swift */,
+				437EFBA51C18EB6500798082 /* CustomWebView.swift */,
+				437EFBA61C18EB6500798082 /* FormTableViewController.swift */,
+				437EFBAB1C18EB6500798082 /* MapViewController.swift */,
+				437EFBAE1C18EB6500798082 /* ScriptureViewController.swift */,
+				437EFBAF1C18EB6500798082 /* VolumesViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		437EFBEB1C18FCC000798082 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				437EFBA11C18EB6500798082 /* AppDelegate.swift */,
+				43640AF81C19F75C0006EC36 /* geocode.js */,
+				437EFBA71C18EB6500798082 /* geo.21.sqlite */,
+				437EFBAC1C18EB6500798082 /* scripture.css */,
+			);
+			name = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,10 +250,12 @@
 				437EFB661C18E89400798082 /* Sources */,
 				437EFB671C18E89400798082 /* Frameworks */,
 				437EFB681C18E89400798082 /* Resources */,
+				437EFBE01C18EBDD00798082 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				437EFBDC1C18EBCB00798082 /* PBXTargetDependency */,
 			);
 			name = "Map Scriptures V2";
 			productName = "Map Scriptures V2";
@@ -111,6 +289,12 @@
 			mainGroup = 437EFB611C18E89300798082;
 			productRefGroup = 437EFB6B1C18E89400798082 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 437EFBC01C18EBBF00798082 /* Products */;
+					ProjectRef = 437EFBBF1C18EBBF00798082 /* SQLite.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				437EFB691C18E89400798082 /* Map Scriptures V2 */,
@@ -118,14 +302,76 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		437EFBCC1C18EBBF00798082 /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 437EFBCB1C18EBBF00798082 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		437EFBCE1C18EBBF00798082 /* SQLite iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLite iOS Tests.xctest";
+			remoteRef = 437EFBCD1C18EBBF00798082 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		437EFBD01C18EBBF00798082 /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 437EFBCF1C18EBBF00798082 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		437EFBD21C18EBBF00798082 /* SQLite Mac Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLite Mac Tests.xctest";
+			remoteRef = 437EFBD11C18EBBF00798082 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		437EFBD41C18EBBF00798082 /* SQLiteCipher.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLiteCipher.framework;
+			remoteRef = 437EFBD31C18EBBF00798082 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		437EFBD61C18EBBF00798082 /* SQLiteCipher iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteCipher iOS Tests.xctest";
+			remoteRef = 437EFBD51C18EBBF00798082 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		437EFBD81C18EBBF00798082 /* SQLiteCipher.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLiteCipher.framework;
+			remoteRef = 437EFBD71C18EBBF00798082 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		437EFBDA1C18EBBF00798082 /* SQLiteCipher Mac Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteCipher Mac Tests.xctest";
+			remoteRef = 437EFBD91C18EBBF00798082 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		437EFB681C18E89400798082 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				437EFB781C18E89400798082 /* LaunchScreen.storyboard in Resources */,
 				437EFB751C18E89400798082 /* Assets.xcassets in Resources */,
-				437EFB731C18E89400798082 /* Main.storyboard in Resources */,
+				43640AF91C19F75C0006EC36 /* geocode.js in Resources */,
+				437EFBE51C18ED2300798082 /* Main.storyboard in Resources */,
+				437EFBE41C18ED2300798082 /* LaunchScreen.storyboard in Resources */,
+				437EFBBB1C18EB6500798082 /* scripture.css in Resources */,
+				437EFBB61C18EB6500798082 /* geo.21.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,31 +382,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				437EFB701C18E89400798082 /* ViewController.swift in Sources */,
-				437EFB6E1C18E89400798082 /* AppDelegate.swift in Sources */,
+				437EFBB31C18EB6500798082 /* ChaptersViewController.swift in Sources */,
+				437EFBB81C18EB6500798082 /* GeoPlace.swift in Sources */,
+				437EFBB51C18EB6500798082 /* FormTableViewController.swift in Sources */,
+				437EFBB11C18EB6500798082 /* Book.swift in Sources */,
+				437EFBBA1C18EB6500798082 /* MapViewController.swift in Sources */,
+				437EFBB01C18EB6500798082 /* AppDelegate.swift in Sources */,
+				437EFBBC1C18EB6500798082 /* ScriptureRenderer.swift in Sources */,
+				437EFBB21C18EB6500798082 /* BooksViewController.swift in Sources */,
+				437EFBBE1C18EB6500798082 /* VolumesViewController.swift in Sources */,
+				437EFBB41C18EB6500798082 /* CustomWebView.swift in Sources */,
+				437EFBBD1C18EB6500798082 /* ScriptureViewController.swift in Sources */,
+				437EFBB71C18EB6500798082 /* GeoDatabase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		437EFB711C18E89400798082 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				437EFB721C18E89400798082 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
+/* Begin PBXTargetDependency section */
+		437EFBDC1C18EBCB00798082 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SQLite iOS";
+			targetProxy = 437EFBDB1C18EBCB00798082 /* PBXContainerItemProxy */;
 		};
-		437EFB761C18E89400798082 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				437EFB771C18E89400798082 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		437EFB7A1C18E89400798082 /* Debug */ = {
@@ -250,10 +495,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Map Scriptures V2/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "byu.is543.Map-Scriptures-V2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Map Scriptures V2/Map Scriptures V2-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -261,10 +510,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Map Scriptures V2/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "byu.is543.Map-Scriptures-V2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Map Scriptures V2/Map Scriptures V2-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -287,6 +539,7 @@
 				437EFB7E1C18E89400798082 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
